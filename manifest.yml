@@ -1,0 +1,13 @@
+applications:
+- path: .
+  memory: 128M
+  instances: 1
+  domain: mybluemix.net
+  name: WCS-Chatbot-Client
+  random-route: true
+  disk_quota: 1024M
+  buildpack: python_buildpack
+  env:
+    CONVERSATION_URL: 'https://xxxxxx.mybluemix.net/v1/workspaces/voiceproxy/message'
+    CONVERSATION_USERNAME: 'value2'
+    CONVERSATION_PASSWORD: 'value3'

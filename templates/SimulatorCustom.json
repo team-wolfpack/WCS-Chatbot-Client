@@ -1,0 +1,41 @@
+   {
+        "bundleId": "SimulatorActions",
+        "displayName": {
+            "en-US": "Simulator Actions"
+        },
+        "description": {
+            "en-US": "Actions that can be performed on my simulator"
+        },
+        "version": "v1",
+        "provider": "ctyler",
+        "actions": {
+            "color": {
+                "Change the Color": {
+                    "en-US": "Change the color"
+                },
+                "description": {
+                    "en-US": "Change the color"
+                },
+                "parameters": [
+                    {
+                        "name": "color",
+                        "value": "",
+                        "required": true,
+                        "defaultValue": "blue"
+                    },
+                    {
+                        "name": "background",
+                        "value": "",
+                        "required": true,
+                        "defaultValue": "Blue"
+                    },
+                    {
+                        "name": "message",
+                        "value": "",
+                        "required": false,
+                        "defaultValue": ""
+                    }
+                ]
+            }
+        }
+    }
