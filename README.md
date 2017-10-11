@@ -70,7 +70,7 @@ At this point you should be up and running in a local environment.
 ### Steps for BlueMix installation
 1. Click the link below
 
-[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/jdcalus/STSA-WCS-WebProxy.git)
+[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/team-wolfpack/WCS-Chatbot-Client.git)
 
 2. Go to the Runtime tab by clicking on the runtime link on the left navigation. In the
 center of the page is an option for environment variables. Click on the link. Within the
