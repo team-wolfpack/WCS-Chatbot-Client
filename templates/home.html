@@ -1,0 +1,30 @@
+<html>
+<head>
+  <base href="/">
+  <title>Conversation Chat App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta property="og:image" content="conversation.svg" />
+  <meta property="og:title" content="Conversation Chat Simple" />
+  <meta property="og:description" content="Sample application that shows how to use the Conversation API to identify user intents" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div id="logo"></div>
+<div id="description">
+	<h1>Conversation Example</h1>
+	<p>Ask me questions like:
+		<ul>What is the current temperature in degrees f</ul>
+		<ul>What is the current temp in celsius</ul>
+	</p>
+	<p>Also, give me commands like:
+		<ul>Change color to green</ul>
+		<ul>Color me red</ul>
+		<ul>Set color to blue</ul>
+	</p>
+	<p>You can also tell me good bye when you're done</p>
+</div>
+<div id="conversationClient"><iframe src="/webclient" height="800" width="600"></iframe></div>
+</body>
+</html>

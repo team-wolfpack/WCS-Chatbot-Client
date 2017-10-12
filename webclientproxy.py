@@ -33,6 +33,10 @@ if 'CONVERSATION_PASSWORD' in os.environ:
 
 
 #--------------- Web Test Client ----------------------------
+@app.route('/')
+def home(name=None):
+    return render_template('home.html', name=name)
+   
 @app.route('/webclient/')
 def hello(name=None):
     return render_template('index.html', name=name)

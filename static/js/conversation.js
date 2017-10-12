@@ -155,7 +155,7 @@ var ConversationPanel = (function() {
 
   // Constructs new DOM element from a message payload
   function buildMessageDomElements(newPayload, isUser) {
-	  var bgColor;
+	  var bgColor="white";
 	  if (typeof (newPayload.intents) !== 'undefined') {
 		  console.log(newPayload);
 		  if (newPayload.intents.length > 0 && newPayload.intents[0].intent == 'ChangeColor') {
@@ -165,6 +165,8 @@ var ConversationPanel = (function() {
 			  }
 		  }
 	  }
+	  document.getElementById('chat-column-holder').style.backgroundColor = bgColor;
+
     var textArray = isUser ? newPayload.input.text : newPayload.output.text;
     if (Object.prototype.toString.call( textArray ) !== '[object Array]') {
       textArray = [textArray];
@@ -180,7 +182,7 @@ var ConversationPanel = (function() {
           'children': [{
             // <div class='from-user/from-watson latest'>
             'tagName': 'div',
-            'classNames': [(isUser ? 'from-user' : 'from-watson'), 'latest', ((messageArray.length === 0) ? 'top' : 'sub'), bgColor],
+            'classNames': [(isUser ? 'from-user' : 'from-watson'), 'latest', ((messageArray.length === 0) ? 'top' : 'sub')],
             'children': [{
               // <div class='message-inner'>
               'tagName': 'div',
