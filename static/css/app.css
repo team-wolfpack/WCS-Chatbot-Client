@@ -162,10 +162,10 @@ div {
 
 .from-user .message-inner {
   position: relative;
-  font-size: 1rem;
+  font-size: 2rem;
   color: #fff;
-  letter-spacing: 0.015rem;
-  line-height: 1.3125rem;
+  letter-spacing: 0.030rem;
+  line-height: 2.625rem;
   background: #00B4A0;
   border-radius: 1.25rem;
   border-bottom-right-radius: 0;
@@ -208,10 +208,10 @@ div {
 .from-watson .message-inner {
   position: relative;
   border-radius: 1.5625rem;
-  font-size: 1rem;
+  font-size: 2rem;
   color: #B5B5B5;
-  letter-spacing: 0.015rem;
-  line-height: 1.3125rem;
+  letter-spacing: 0.030rem;
+  line-height: 2.625rem;
 }
 
 .from-watson.latest .message-inner {
@@ -232,8 +232,8 @@ div {
   z-index: 2;
   left: 0.4375rem;
   width: 0.3125rem;
-  height: 1.3125rem;
-  line-height: 1.3125rem;
+  height: 2.625rem;
+  line-height: 2.625rem;
 }
 
 #textInput {
@@ -242,8 +242,9 @@ div {
   background: transparent;
   font-size: 1rem;
   color: #323232;
-  letter-spacing: 0.015rem;
-  line-height: 1.3125rem;
+  letter-spacing: 0.030rem;
+  line-height: 2.625rem;
+  font-size: 2rem;
   height: 2.5rem;
   max-width: 100%;
   padding-left: 0.125rem;
