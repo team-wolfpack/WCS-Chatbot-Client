@@ -165,7 +165,7 @@ var ConversationPanel = (function() {
 			  }
 		  }
 	  }
-	  document.getElementById('chat-column-holder').style.backgroundColor = bgColor;
+	  document.getElementsByClassName('chat-column')[0].style.backgroundColor = bgColor;
 
     var textArray = isUser ? newPayload.input.text : newPayload.output.text;
     if (Object.prototype.toString.call( textArray ) !== '[object Array]') {

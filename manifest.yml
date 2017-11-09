@@ -9,5 +9,3 @@ applications:
   buildpack: python_buildpack
   env:
     CONVERSATION_URL: 'https://xxxxxx.mybluemix.net/v1/workspaces/voiceproxy/message'
-    CONVERSATION_USERNAME: 'value2'
-    CONVERSATION_PASSWORD: 'value3'

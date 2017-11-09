@@ -18,24 +18,15 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 logging.info("starting")
 logging_comp_name = "STSA Web Client Proxy Main Loop"
 
-CONVERSATION_URL = 'https://stsa-soe.mybluemix.net/v1/workspaces/voiceproxy/message'
+CONVERSATION_URL = ''
 if 'CONVERSATION_URL' in os.environ:
 	CONVERSATION_URL = os.environ['CONVERSATION_URL']
-
-CONVERSATION_USERNAME=''
-if 'CONVERSATION_USERNAME' in os.environ:
-	CONVERSATION_USERNAME = os.environ['CONVERSATION_USERNAME']
-
-
-CONVERSATION_PASSWORD=''
-if 'CONVERSATION_PASSWORD' in os.environ:
-	CONVERSATION_PASSWORD = os.environ['CONVERSATION_PASSWORD']
 
 
 #--------------- Web Test Client ----------------------------
 @app.route('/')
 def home(name=None):
-    return render_template('home.html', name=name)
+    return render_template('index.html', name=name)
    
 @app.route('/webclient/')
 def hello(name=None):
@@ -73,7 +64,7 @@ def restWebClientVoiceGatewayEntry():
 #------------ Time to talk to Node Red ------------------
 def converse(message):
 	POST_SUCCESS = 200
-	r = requests.post(CONVERSATION_URL, auth=(CONVERSATION_USERNAME, CONVERSATION_PASSWORD), headers={'content-type': 'application/json'}, data=json.dumps(message))
+	r = requests.post(CONVERSATION_URL, headers={'content-type': 'application/json'}, data=json.dumps(message))
 	if r.status_code == POST_SUCCESS:
 		message = r.json()
 	

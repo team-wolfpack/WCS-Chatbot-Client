@@ -28,32 +28,32 @@ iframe {
 
 #description {
 	position: fixed;
-	left: 150px;
-	bottom: 250px;
+	left: 50px;
+	bottom: 50px;
 	border-width: 20px;
 	border-style: solid;
 	border-radius: 15px;
-	font-size: 18pt;
+	font-size: 12pt;
 	background-color: white;
 	padding: 10px;
 }
 
 #description p {
 	font-weight: bold;
-	font-size: 24pt;
+	font-size: 16pt;
 }
 
 #description h1 {
 	text-decoration: underline;
-	padding-bottom: 15px;
+	padding-bottom: 10px;
 }
 
 #logo {
 	position: fixed;
 	left: 10px;
 	top: 10px;
-	height: 66px;
-	width: 180px;
+	height: 31px;
+	width: 83px;
 	background-size: cover;
 	background-image: url('/static/img/IBM Logo.png');
 }
@@ -113,15 +113,27 @@ div {
 
 #chat-column-holder {
   text-align: center;
+  max-width: 600px;
+  min-width: 600px;
+  background-color: white;
+  position: fixed;
+  top: 100px;
+  right: 425px;
 }
 
 .chat-column {
-  height: 100%;
-  padding: 0.9375rem 0 0.625rem 0;
+  height: 80%;
+  padding: 10px;
   margin: auto;
   text-align: left;
-  max-width: 90%;
-  min-width: 9.375rem;
+  max-width: 600px;
+  min-width: 600px;
+  border-width: 20px;
+  border-style: solid;
+  border-radius: 15px;
+  position: fixed;
+  top: 100px;
+  right: 425px;
 }
 
 #scrollingChat {
@@ -162,7 +174,7 @@ div {
 
 .from-user .message-inner {
   position: relative;
-  font-size: 2rem;
+  font-size: 12pt;
   color: #fff;
   letter-spacing: 0.030rem;
   line-height: 2.625rem;
@@ -208,10 +220,10 @@ div {
 .from-watson .message-inner {
   position: relative;
   border-radius: 1.5625rem;
-  font-size: 2rem;
+  font-size: 12pt;
   color: #B5B5B5;
-  letter-spacing: 0.030rem;
-  line-height: 2.625rem;
+  letter-spacing: 1pt;
+  line-height: 10pt;
 }
 
 .from-watson.latest .message-inner {
@@ -227,24 +239,23 @@ div {
   content: ".";
   color: #9855D4;
   background-image: url("../img/marker_image.png");
-  background-size: 0.3125rem 1.3125rem;
+  background-size: 1px 1px;
   position: absolute;
   z-index: 2;
   left: 0.4375rem;
   width: 0.3125rem;
-  height: 2.625rem;
-  line-height: 2.625rem;
+  height: 16pt;
+  line-height: 10pt;
 }
 
 #textInput {
   border: none;
   outline: none;
   background: transparent;
-  font-size: 1rem;
+  font-size: 12pt;
   color: #323232;
-  letter-spacing: 0.030rem;
-  line-height: 2.625rem;
-  font-size: 2rem;
+  letter-spacing: 1pt;
+  line-height: 3pt;
   height: 2.5rem;
   max-width: 100%;
   padding-left: 0.125rem;
@@ -302,10 +313,13 @@ input:-moz-placeholder {
   background-color: #23292A;
   color: #fff;
   overflow-x: auto;
-
+  position: fixed;
+  right: 0px;
+  top: 0px;
   width: 45%;
-  max-width: 32.0625rem;
-  min-width: 29.6875rem;
+  max-width: 400px;
+  min-width: 300px;
+  height: 100%;
 }
 
 #payload-column.full {
